@@ -1,18 +1,20 @@
-# FuCloud/FileBrowser Web
-A lightweight static web page used to redirect users to a dynamic Cloudflare TryCloudflare tunnel.
+# FuCloud
+My tiny personal project in university, a small web to access some services in my homelab.
 
 ## Purpose
 
-This repository hosts a simple `index.html` page via GitHub Pages.
+Im a Vietnamese IT student who interested in Cloud Computing. Now, Im finding out infrastructure, server, networking, cloud and hypervisor by building a small homelab.
 
-The page automatically redirects visitors to the current temporary Cloudflare tunnel URL.
+## My PC Configuration
+
+Name: HP EliteDesk 800 G5
+CPU: Intel Core i5 8500T 6C6T
+Ram: 8gb DDR4 2666MHz (16gb in the future =)).
+Storage: 120 GB NVme M2, 256 GB 2.5 SATA, 500GB HDD 2.5
 
 ## How It Works
 
-1. A local service is exposed using `cloudflared tunnel --url`.
-2. Cloudflare generates a temporary `trycloudflare.com` URL.
-3. The generated URL is updated inside `index.html`.
-4. GitHub Pages serves the redirect page publicly.
+I will install Proxmox Virtual Environment, a famous open-source Debian-based hypervisor platform in my miniPC and create some Linux Containers (LXC) which install Ubuntu to deploy some small services in my purpose. One of them is trying to copy a "Google Drive" by using File Browser-an application written by Go(lang) for data storage and share this interesting thing with my friends...
 
 ## Structure
 
@@ -21,17 +23,10 @@ index.html
 README.md
 ```
 
-## Example Redirect
-
-```html
-<meta http-equiv="refresh" content="0; url=https://example.trycloudflare.com">
-```
-
 ## Deployment
 
 Hosted using GitHub Pages.
 
 ## Notes
-
-- `trycloudflare.com` URLs are temporary.
-- The redirect target changes every time a new tunnel is created.
+In the future, i will add css and may be js or python in this repo. Maybe i will find out some framework like reactjs or nodejs.
+My English is not really good but i will practice more. Try my best =).
